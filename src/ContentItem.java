@@ -25,7 +25,7 @@ public abstract class ContentItem {
     }
     public void setTitle(String title) {
         if (title == null || title.isEmpty()) {
-            throw new IllegalArgumentException("Title cannot be null");
+            throw new IllegalArgumentException("Title cannot be empty");
         }
         else{
         this.title = title;}
@@ -39,7 +39,7 @@ public abstract class ContentItem {
     }
     public void setDurationMinutes(int durationMinutes) {
         if (durationMinutes <= 0) {
-            throw new IllegalArgumentException("Duration cannot be negative");
+            throw new IllegalArgumentException("Duration cannot be negative or 0");
         }
         else{
         this.durationMinutes = durationMinutes;}

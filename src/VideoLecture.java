@@ -4,7 +4,7 @@ public class VideoLecture extends ContentItem implements Downloadable{
 
     public VideoLecture(String title, int year, int durationMinutes, String quality) {
         super(title, year, durationMinutes);
-        this.quality = quality;
+        setQuality(quality);
     }
 
     public String getQuality() {

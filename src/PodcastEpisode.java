@@ -4,7 +4,7 @@ public class PodcastEpisode extends ContentItem implements Downloadable{
 
     public PodcastEpisode(String title, int year, int durationMinutes, String hostName){
         super(title, year, durationMinutes);
-        this.hostName = hostName;
+        setHostName(hostName);
     }
 
     public String getHostName() {
